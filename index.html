@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
 	<title>Daniel's Email Form</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<h1 class="page-title">Daniel's Email Form</h1>
+		<h1>Daniel's Email Form</h1>
 	</header>
-	<main>
-		<form action="submit.php" method="POST">
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-			<input type="submit" value="Submit">
-		</form>
-		<div class="email-list">
-			<label for="email-select">Select an email:</label>
-			<select id="email-select" name="email-select">
-				<option value="">Choose an email</option>
-				<?php
-					// Retrieve all the emails from the database
-					$query = "SELECT email FROM emails";
-					$result = mysqli_query($conn, $query);
 
-					// Loop through the results and create an option for each email
-					while ($row = mysqli_fetch_assoc($result)) {
-						echo '<option value="' . $row['email'] . '">' . $row['email'] . '</option>';
-					}
-				?>
-			</select>
+	<main>
+		<div class="form-container">
+			<form action="#" method="post">
+				<label for="email">Enter your email:</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email here" required>
+				<button type="submit">Submit</button>
+			</form>
 		</div>
 	</main>
 </body>
