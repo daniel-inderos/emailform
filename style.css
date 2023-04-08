@@ -1,0 +1,84 @@
+/* Body styles */
+body {
+	background-color: #c6e2ff;
+	background-image: linear-gradient(to bottom right, #b0d4ff, #d3e8ff);
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+/* Page title styles */
+.page-title {
+	margin: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Header styles */
+header {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	height: 60px;
+	position: relative;
+}
+
+/* Main content styles */
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Form styles */
+form {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input[type="email"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+/* Email list styles */
+.email-list {
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+.email-list label {
+	display: block;
+	font-weight: bold;
+}
+
+.email-list select {
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
